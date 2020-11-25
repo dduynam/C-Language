@@ -1,0 +1,12 @@
+uint8 add(uint8 a, uint8 b);
+uint8 sub(uint8 a, uint8 b);
+uint8 mul(uint8 a, uint8 b);
+
+uint8(*fp[])(uint8, uint8) = {add,sub,mul};  //&foo
+enum {
+    ADD,
+    SUB,
+    MUL
+ };
+ 
+ 
